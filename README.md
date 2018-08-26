@@ -1,0 +1,1 @@
+# A instruction on how to use Clion to write Cuda program
