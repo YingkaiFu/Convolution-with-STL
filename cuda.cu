@@ -1,6 +1,7 @@
 #include <host_defines.h>
 #include <cuda_runtime.h>
 #include "iostream"
+
 using namespace std;
 __global__ void add(int a, int b, int *c)//kernel函数，在gpu上运行。
 {

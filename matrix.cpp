@@ -11,16 +11,16 @@ void matrix(int M1[A][B], int M2[B][C]) {
     int O[A][C] = {0};
     for (int i = 0; i < A; ++i) {
         for (int j = 0; j < C; ++j) {
-            int sum = 0;
+            O[i][j] = 0;
             for (int k = 0; k < B; ++k) {
-                sum += M1[i][k] * M2[k][j];
+                O[i][j] += M1[i][k] * M2[k][j];
             }
-            O[i][j] = sum;
         }
     }
 }
 
 void conv(int M1[6][6], int M2[3][3], int stride, int Ksize) {
+    cout << "General Conv";
     const int FS = 6;
     int W = ((6 - Ksize) / stride + 1) * ((6 - Ksize) / stride + 1);
     int H = Ksize * Ksize;

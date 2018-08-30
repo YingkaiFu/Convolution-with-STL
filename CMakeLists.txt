@@ -9,4 +9,4 @@ LINK_DIRECTORIES(
         /usr/local/cuda/lib64/
         )
 
-cuda_add_executable(Cuda main.cpp cuda.cu cuda.h matrix.cpp)
+cuda_add_executable(Cuda main.cpp cuda.cu cuda.h matrix.cpp matrix_with_stl.h matrix_with_stl.cpp)
